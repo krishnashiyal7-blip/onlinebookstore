@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review the books in your Papertrail cart.">
+  <title>Your Cart — Papertrail</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Papertrail home"><span class="brand-mark">P</span><span class="brand-name">papertrail</span></a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="books.html">Books</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html">Login</a></nav>
+    <div class="nav-actions"><a class="cart-link" href="cart.html">Cart <span class="cart-count">0</span></a></div>
+  </div></header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Your book bag</p><h1>A few good stories.</h1><p>Take a look at the books you’ve picked out.</p></div></section>
+    <section class="section"><div class="container">
+      <div class="cart-empty" id="cart-empty" hidden><div class="empty-icon" aria-hidden="true">▤</div><h2>Your cart is waiting for a story.</h2><p>Find something wonderful to read and it’ll show up here.</p><a class="button" href="books.html">Browse books →</a></div>
+      <div class="cart-layout" id="cart-content" hidden>
+        <div class="cart-items" id="cart-items"></div>
+        <aside class="order-summary"><h2>Order summary</h2><div class="summary-line"><span>Subtotal</span><span id="subtotal">$0.00</span></div><div class="summary-line"><span>Shipping</span><span>Free</span></div><div class="summary-line total"><span>Total</span><span id="grand-total">$0.00</span></div><p class="summary-note">Shipping and taxes calculated at checkout.</p><button class="button full" type="button" id="checkout-button">Continue to checkout →</button><p class="form-footer"><a href="books.html">Continue browsing</a></p></aside>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-top"><div><a class="brand" href="index.html"><span class="brand-mark">P</span><span class="brand-name">papertrail</span></a><p class="footer-blurb">A cozy corner of the internet for people who love getting lost in a good book.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="books.html">Books</a><a href="about.html">Our story</a><a href="contact.html">Contact</a><a href="register.html">Create account</a><a href="cart.html">Your cart</a></nav></div><div class="footer-bottom">© 2025 Papertrail Books. Made for the love of reading.</div></div></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
